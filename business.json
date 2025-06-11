@@ -1,0 +1,105 @@
+{
+    "businessName": "Yogurtlandia",
+    "chatbotObjetive": "Mi área principal es el soporte general y la asistencia informativa para el usuario. Mi objetivo es: * Proporcionar información precisa y útil sobre una amplia gama de temas. * Responder preguntas de manera clara y concisa. * Ofrecer ayuda y orientación en diversas tareas o consultas. * Mejorar la eficiencia y la experiencia del usuario al ofrecer acceso rápido a la información. * Actuar como un recurso de primera línea para consultas comunes antes de escalar a un agente humano, si fuera necesario. El chatbot cumple la función de responder dudas frecuentes de los clientes de manera inmediata y eficiente, proporcionar información relevante sobre el negocio (productos, servicios, ubicación, horario) y mejorar la experiencia de atención al cliente, liberando al personal para tareas más complejas. En resumen, busca ser un primer punto de contacto para facilitar la comunicación y la venta. Lo usarán clientes actuales y potenciales de la heladería de yogurt griego. Esto incluye personas que buscan información sobre productos, horarios, precios, promociones o que desean hacer consultas generales antes o durante su visita.",
+    "options": [
+        {
+        "label": "Saludo",
+        "keywords": ["hola", "saludos", "buenos días", "buenas tardes", "buenas noches"],
+        "responses": [
+            "¡Hola! ¡Bienvenido a Yogurtlandia! ¿En qué puedo ayudarte hoy?",
+            "¡Qué gusto verte! Estamos aquí para endulzar tu día con el mejor helado de yogurt.",
+            "¡Saludos! Somos Yogurtlandia. ¿Estás listo para una deliciosa experiencia?"
+        ]
+        },
+        {
+        "label": "Horario de Atención",
+        "keywords": ["horario", "abierto", "cerrado", "¿a qué hora abren?", "¿a qué hora cierran?"],
+        "responses": [
+            "Nuestro horario de atención es de lunes a sábado de 10:00 AM a 9:00 PM y domingos de 11:00 AM a 7:00 PM.",
+            "Estamos abiertos de lunes a sábado hasta las 9 PM y los domingos hasta las 7 PM. ¡Te esperamos!",
+            "Puedes visitarnos de lunes a sábado de 10 AM a 9 PM, y los domingos de 11 AM a 7 PM."
+        ]
+        },
+        {
+        "label": "Información de Contacto",
+        "keywords": ["contacto", "teléfono", "dirección", "ubicación", "número", "whatsapp"],
+        "responses": [
+            "Puedes contactarnos al 123-456-7890 o visitarnos en Av. Principal #123, Sector El Helado Feliz.",
+            "Nuestro número de teléfono es 123-456-7890. También puedes encontrarnos en Av. Principal #123.",
+            "Para cualquier consulta, llámanos al 123-456-7890. ¡Estamos en Av. Principal #123!"
+        ]
+        },
+        {
+        "label": "Sabores de Helado",
+        "keywords": ["sabores", "menú", "variedades", "qué tienen", "opciones", "helado", "yogurt"],
+        "responses": [
+            "Ofrecemos una amplia variedad de sabores de helado de yogurt griego, incluyendo natural, fresa, mango, chocolate, vainilla y muchos más. ¡Pregunta por nuestras especialidades de temporada!",
+            "Nuestros sabores incluyen clásico, fresa, mango, frutos rojos, chocolate oscuro, vainilla y nuestra especialidad del mes. ¿Cuál te apetece hoy?",
+            "Tenemos sabores deliciosos como natural, fresa, mango, arándano, chocolate, y muchos toppings para combinar. ¡Ven a crear tu combinación perfecta!"
+        ]
+        },
+        {
+        "label": "Precios",
+        "keywords": ["precios", "costo", "cuánto cuesta", "tarifa", "valor"],
+        "responses": [
+            "Nuestros precios varían según el tamaño y los toppings que elijas. Tenemos opciones desde $3 hasta $8. ¡Consulta nuestro menú para más detalles!",
+            "El costo depende del tamaño de tu helado y los toppings. Puedes ver todos los precios en nuestra tienda o te podemos dar un estimado si nos dices el tamaño.",
+            "Tenemos diferentes tamaños y precios. Un helado pequeño empieza desde $3. ¡Pregunta por nuestras promociones!"
+        ]
+        },
+        {
+        "label": "Toppings Disponibles",
+        "keywords": ["toppings", "aderezos", "acompañamientos", "extras", "frutas", "dulces"],
+        "responses": [
+            "Contamos con una gran selección de toppings: frutas frescas, granola, chispas de chocolate, gomitas, salsas, y más. ¡Personaliza tu helado a tu gusto!",
+            "Puedes elegir entre frutas frescas, frutos secos, jarabes, chocolates, galletas y dulces. ¡La combinación es infinita!",
+            "Nuestros toppings incluyen fresas, arándanos, plátano, granola, miel, chocolate derretido, y una variedad de dulces. ¡Haz tu helado único!"
+        ]
+        },
+        {
+        "label": "Opciones Veganas/Sin Lactosa",
+        "keywords": ["vegano", "sin lactosa", "vegetariano", "dieta especial", "intolerancia"],
+        "responses": [
+            "Sí, tenemos opciones de helado de yogurt sin lactosa. ¡Pregunta por nuestro sabor especial sin lactosa!",
+            "Actualmente ofrecemos una opción de helado de yogurt griego sin lactosa. ¡Es delicioso!",
+            "Para dietas especiales, tenemos una alternativa de helado sin lactosa. ¡Consúltanos para más detalles!"
+        ]
+        },
+        {
+        "label": "Promociones",
+        "keywords": ["promociones", "ofertas", "descuentos", "especiales", "2x1"],
+        "responses": [
+            "¡Tenemos promociones semanales! Pregunta por nuestra 'Promo del Día' o síguenos en redes sociales para no perderte ninguna oferta.",
+            "Constantemente lanzamos ofertas especiales. ¡No te pierdas nuestro 2x1 en tamaños medianos los martes!",
+            "Sí, tenemos promociones. ¡Pregunta en caja o revisa nuestro Instagram para las ofertas actuales!"
+        ]
+        },
+        {
+        "label": "Pedidos Grandes/Eventos",
+        "keywords": ["pedidos grandes", "eventos", "fiestas", "catering", "mayorista"],
+        "responses": [
+            "Claro, ofrecemos servicios para eventos y pedidos grandes. Contáctanos con anticipación para coordinar y hacer de tu evento algo dulce.",
+            "Podemos ayudarte con tu evento especial. Hacemos pedidos grandes de helado. ¡Llámanos para más información!",
+            "Para catering o pedidos al por mayor, por favor contáctanos directamente para un presupuesto personalizado."
+        ]
+        },
+        {
+        "label": "Métodos de Pago",
+        "keywords": ["pago", "pagar", "efectivo", "tarjeta", "punto de venta", "transferencia", "bizum"],
+        "responses": [
+            "Aceptamos efectivo, tarjetas de débito y crédito. Próximamente también aceptaremos pagos móviles.",
+            "Puedes pagar con efectivo, tarjeta de débito o crédito. ¡Hacemos que sea fácil para ti!",
+            "Nuestros métodos de pago incluyen efectivo y tarjetas bancarias."
+        ]
+        },
+        {
+        "label": "Despedida",
+        "keywords": ["adiós", "gracias", "hasta luego", "chao"],
+        "responses": [
+            "¡De nada! ¡Que disfrutes mucho tu helado! Esperamos verte de nuevo pronto.",
+            "¡Gracias a ti por visitarnos! ¡Vuelve pronto por más helado!",
+            "¡Ha sido un placer ayudarte! ¡Que tengas un dulce día!"
+        ]
+        }
+    ]
+}
