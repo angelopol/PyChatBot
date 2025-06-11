@@ -3,6 +3,8 @@
     "businessDescription": "Yogurtlandia es una heladería especializada en helados de yogurt griego, ofreciendo una amplia variedad de sabores y toppings frescos. Nuestro objetivo es proporcionar una experiencia deliciosa y saludable a nuestros clientes, con opciones para todos los gustos, incluyendo alternativas veganas y sin lactosa. Nos ubicamos en el corazón de la ciudad, brindando un ambiente acogedor y amigable para disfrutar de un momento dulce.",
     "businessAddress": "Av. Principal #123, Sector El Helado Feliz",
     "businessPhone": "123-456-7890",
+    "businessEmail": "No posee",
+    "businessWebsite": "No posee",
     "chatbotObjetive": "Mi área principal es el soporte general y la asistencia informativa para el usuario. Mi objetivo es: * Proporcionar información precisa y útil sobre una amplia gama de temas. * Responder preguntas de manera clara y concisa. * Ofrecer ayuda y orientación en diversas tareas o consultas. * Mejorar la eficiencia y la experiencia del usuario al ofrecer acceso rápido a la información. * Actuar como un recurso de primera línea para consultas comunes antes de escalar a un agente humano, si fuera necesario. El chatbot cumple la función de responder dudas frecuentes de los clientes de manera inmediata y eficiente, proporcionar información relevante sobre el negocio (productos, servicios, ubicación, horario) y mejorar la experiencia de atención al cliente, liberando al personal para tareas más complejas. En resumen, busca ser un primer punto de contacto para facilitar la comunicación y la venta. Lo usarán clientes actuales y potenciales de la heladería de yogurt griego. Esto incluye personas que buscan información sobre productos, horarios, precios, promociones o que desean hacer consultas generales antes o durante su visita.",
     "options": [
         {
@@ -43,7 +45,7 @@
         },
         {
         "label": "Precios",
-        "keywords": ["precios", "costo", "cuánto cuesta", "tarifa", "valor"],
+        "keywords": ["precio", "precios", "costo", "cuánto cuesta", "tarifa", "valor"],
         "responses": [
             "Nuestros precios varían según el tamaño y los toppings que elijas. Tenemos opciones desde $3 hasta $8. ¡Consulta nuestro menú para más detalles!",
             "El costo depende del tamaño de tu helado y los toppings. Puedes ver todos los precios en nuestra tienda o te podemos dar un estimado si nos dices el tamaño.",

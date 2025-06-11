@@ -14,21 +14,23 @@ except Exception as e:
 def onlineResponse(user_message, data):
     if not client:
         return "El bot no se ha inicializado correctamente, revisa tu conexión."
-    response = client.models.generate_content(
-        model="gemini-2.0-flash",
-        contents="You are a helpful assistant. Answer the user's question based on the provided business data.\n\n"
-        f"Business Name: {data.get('businessName', 'Unknown')}\n"
-        f"Business Description: {data.get('businessDescription', 'No description available')}\n"
-        f"Business Location: {data.get('businessLocation', 'No location available')}\n"
-        f"Business Phone: {data.get('businessPhone', 'No phone available')}\n"
-        f"Business Email: {data.get('businessEmail', 'No email available')}\n"
-        f"Business Website: {data.get('businessWebsite', 'No website available')}\n\n"
-        "You have an examples of questions and answers in a json format:\n"
-        f"{data.get('options', 'No examples available')}\n\n"
-        f"User Message: {user_message}\n\n"
-        "Please provide a concise and relevant response based on the business data. And response in the language of the user message.\n",
-    )
-
+    try:
+        response = client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents="You are a helpful assistant. Answer the user's question based on the provided business data.\n\n"
+            f"Business Name: {data.get('businessName', 'Unknown')}\n"
+            f"Business Description: {data.get('businessDescription', 'No description available')}\n"
+            f"Business Location: {data.get('businessLocation', 'No location available')}\n"
+            f"Business Phone: {data.get('businessPhone', 'No phone available')}\n"
+            f"Business Email: {data.get('businessEmail', 'No email available')}\n"
+            f"Business Website: {data.get('businessWebsite', 'No website available')}\n\n"
+            "You have an examples of questions and answers in a json format:\n"
+            f"{data.get('options', 'No examples available')}\n\n"
+            f"User Message: {user_message}\n\n"
+            "Please provide a concise and relevant response based on the business data. And response in the language of the user message.\n",
+        )
+    except:
+        return "El bot no se ha inicializado correctamente, revisa tu conexión."
     return response.text
 
 if __name__ == '__main__':
