@@ -77,9 +77,9 @@ class ChatMessage(ft.Row):
         ]
         return colors_lookup[hash(user_name) % len(colors_lookup)]
 
-def main(page: ft.Page):
+def ui(page: ft.Page, title: str = "Flet Chat"):
     page.horizontal_alignment = ft.CrossAxisAlignment.STRETCH
-    page.title = "Flet Chat"
+    page.title = title
 
     def bot_response(user_message):
         # Aquí puedes poner la lógica de tu bot
@@ -157,5 +157,10 @@ def main(page: ft.Page):
         ),
     )
 
+def runUi(title: str = "Flet Chat"):
+    ft.app(target=lambda page: ui(page, title))
 
-ft.app(target=main)
+
+if __name__ == "__main__":
+    # Run the app
+    runUi()
