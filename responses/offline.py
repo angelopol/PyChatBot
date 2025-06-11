@@ -1,6 +1,8 @@
 import random
 
-def bot_response(user_message, options):
+def offlineResponse(user_message, options):
+    if not options:
+        return "No hay opciones disponibles para responder. Por favor, verifica la configuración del bot."
     user_message_lower = user_message.lower()
     last_response = None
     for option in options:
@@ -18,5 +20,5 @@ if __name__ == "__main__":
         data = json.load(f)
     options = data.get("options", [])
     user_message = input("Escribe tu mensaje: ")
-    response = bot_response(user_message, options)
+    response = offlineResponse(user_message, options)
     print(f"Bot: {response}")
