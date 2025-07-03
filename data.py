@@ -1,6 +1,6 @@
 # data.py
 
-# --- Menú de YogurtLandia ---
+# --- Menú de YogurtLandia (unificado con business.json) ---
 MENU_TEXT = """
 Aquí te presentamos nuestras opciones de YogurtLandia:
 
@@ -9,11 +9,17 @@ Helados de Yogurt:
 - Fresa: Con trozos de fresa fresca.
 - Mango: Un toque tropical y dulce.
 - Chocolate: Para los amantes del cacao.
+- Vainilla: Suave y cremosa.
+- Frutos rojos: Refrescante y antioxidante.
+- Chocolate oscuro: Intenso y delicioso.
+- Arándano: Dulce y ácido a la vez.
+- Especialidad del mes: ¡Pregunta por el sabor especial!
 
 Toppings Premium:
-- Frutas frescas: Fresa, Kiwi, Plátano (+$1.00)
+- Frutas frescas: Fresa, Kiwi, Plátano, Arándano (+$1.00)
 - Frutos secos: Almendras, Nueces (+$0.75)
 - Chocolates: Chips de chocolate, Oreo triturada (+$0.75)
+- Granola, gomitas, salsas, miel, galletas y dulces
 
 Salsas:
 - Chocolate, Arequipe, Frutos Rojos, Caramelo (+$0.50)
@@ -27,23 +33,25 @@ Tamaños de Vaso:
 """
 
 PROMOTIONS_TEXT = """
-Excelentes noticias desde YogurtLandia. Aquí te traemos nuestras promociones actuales:
+¡Tenemos promociones semanales! Pregunta por nuestra 'Promo del Día' o síguenos en redes sociales para no perderte ninguna oferta.
 
 Oferta del Día: Martes de DOBLE TOPPING. Pide cualquier tamaño de helado y tu segundo topping es gratis. Solo por hoy.
 Programa de Fidelidad: Acumula puntos con cada compra. Cada 5 helados, tu siguiente topping es gratis. Pregunta en tienda cómo unirte.
 Nuevo Sabor Estacional: Descubre nuestro refrescante helado de yogurt de maracuyá por tiempo limitado. No te lo pierdas.
 
+Constantemente lanzamos ofertas especiales. ¡No te pierdas nuestro 2x1 en tamaños medianos los martes!
+Sí, tenemos promociones. ¡Pregunta en caja o revisa nuestro Instagram para las ofertas actuales!
+
 Te esperamos para que disfrutes estas ofertas.
 """
 
-# --- Ubicación y Horarios ---
 LOCATION_TEXT = """
 📍 ¡Estamos esperando por ti en YogurtLandia!
 
-* **Dirección:** Av. Siempre Viva 123, Centro Comercial El Oasis, Local #7, San Diego, Carabobo, Venezuela.
+* **Dirección:** Av. Principal #123, Sector El Helado Feliz
 * **Horarios de Atención:**
     * Lunes a Sábado: 10:00 AM - 9:00 PM
-    * Domingos: 12:00 PM - 7:00 PM
+    * Domingos: 11:00 AM - 7:00 PM
 
 ¡Ven y crea tu helado perfecto!
 """
