@@ -119,9 +119,14 @@ async def button(update: Update, context):
 
 
 async def unknown(update: Update, context):
-    """Responde a mensajes personalizados usando Gemini."""
+    """Responde a mensajes personalizados usando Gemini y muestra el menú principal."""
+    # Menú principal
     keyboard = [
-        [InlineKeyboardButton("🔙 Volver al Inicio", callback_data='start_over')]
+        [InlineKeyboardButton("🍦 Nuestro Menú", callback_data='menu')],
+        [InlineKeyboardButton("🎉 Promociones y Ofertas", callback_data='promociones')],
+        [InlineKeyboardButton("📍 ¿Dónde Estamos?", callback_data='ubicacion')],
+        [InlineKeyboardButton("❓ Preguntas Frecuentes", callback_data='faq')],
+        [InlineKeyboardButton("🗣️ Hablar con un Humano", callback_data='contacto_humano')],
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     # Cargar datos del negocio
