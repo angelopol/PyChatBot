@@ -6,6 +6,8 @@ from telegram.ext import Application, CommandHandler, CallbackQueryHandler, Mess
 
 from config import TELEGRAM_BOT_TOKEN
 from data import MENU_TEXT, PROMOTIONS_TEXT, LOCATION_TEXT, FAQ_TEXT, HUMAN_CONTACT_TEXT
+import json
+from gemini import onlineResponse
 
 # Configurar el registro (útil para depurar)
 logging.basicConfig(
@@ -115,14 +117,23 @@ async def button(update: Update, context):
         await start(update, context) # Vuelve a ejecutar el comando start para mostrar el menú principal
 
 
+
 async def unknown(update: Update, context):
-    """Responde a mensajes que el bot no entiende."""
+    """Responde a mensajes personalizados usando Gemini."""
     keyboard = [
         [InlineKeyboardButton("🔙 Volver al Inicio", callback_data='start_over')]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
+    # Cargar datos del negocio
+    try:
+        with open("business.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception:
+        data = {}
+    user_message = update.message.text if update.message else ""
+    respuesta = onlineResponse(user_message, data)
     await update.message.reply_text(
-        "Lo siento, no entendí ese comando. Por favor, usa los botones del menú o escribe /start para comenzar.",
+        respuesta,
         reply_markup=reply_markup
     )
 

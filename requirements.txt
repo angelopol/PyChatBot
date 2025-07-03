@@ -1,0 +1,4 @@
+flet
+python-dotenv
+google-generativeai
+python-telegram-bot
