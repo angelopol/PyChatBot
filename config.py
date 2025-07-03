@@ -1,1 +1,6 @@
-TELEGRAM_BOT_TOKEN = '7329723140:AAE39_aD_VUyIHX4tLnw00oTZeOWJRw7Kn0'
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+TELEGRAM_BOT_TOKEN = os.getenv('TELEGRAM_BOT_TOKEN')
